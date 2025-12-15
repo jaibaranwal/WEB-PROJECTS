@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: rgb(207, 6, 6);
+    color: rgb(239, 236, 236);
+    padding: 9px 15px 9px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: red;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: rgb(229, 4, 4);
+    color: rgb(237, 230, 230);
+    border-color: red;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 14px 160px 14px 15px;
+    color: white;
+    font-size: 13px;
+    font
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.trending {
+    padding: 40px 60px;
+    color: white;
+    position:relative;
+    background-color: black;
+
+}
+
+.trending h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal scrolling row */
+.movie-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    height: 300px;   /* 🔥 THIS FIXES OVERLAP */
+}
+
+.movie-row::-webkit-scrollbar {
+    display: flex; /* Chrome */
+    gap:20px
+}
+
+/* Movie posters */
+.movie-row img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Netflix hover effect */
+.movie-row img:hover {
+    transform: scale(1.08);
+}
+.movie-card {
+    position: relative;
+    padding: 15px;
+    min-width: 180px;
+}
+
+.movie-card img {
+    height: 260px;
+    border-radius: 8px;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card img:hover {
+    transform: scale(1.08);
+}
+
+.rank {
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    font-size: 110px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    z-index: 2;
+}
+.reasons {
+    padding: 80px 60px;
+    background-color: black;
+    color: white;
+}
+
+.reasons h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.reason-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(
+        135deg,
+        #1a2040,
+        #2a0d2a
+    );
+    border-radius: 16px;
+    padding: 24px;
+    min-height: 220px;
+    position: relative;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.card .icon {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    opacity: 0.9;
+}
+
+
+
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.hero1 {
+    position: relative;
+    z-index: 10;
+    font-size: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 23px;
+    padding: 0 30px;
+}
+.hero1 input {
+    padding: 12px 80px;
+    font-size: 16px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+@media (max-width: 1000px) {
+    .reason-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .reason-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
