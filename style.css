@@ -5,7 +5,6 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     background-color: black;
 }
@@ -138,22 +137,20 @@ nav button {
     margin-bottom: 20px;
 }
 
-/* Horizontal scrolling row */
 .movie-row {
     display: flex;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px 0;
-    height: 300px;   /* 🔥 THIS FIXES OVERLAP */
+    height: 300px; 
 }
 
 .movie-row::-webkit-scrollbar {
-    display: flex; /* Chrome */
+    display: flex; 
     gap:20px
 }
 
-/* Movie posters */
 .movie-row img {
     width: 200px;
     height: 300px;
@@ -163,7 +160,6 @@ nav button {
     transition: transform 0.3s ease;
 }
 
-/* Netflix hover effect */
 .movie-row img:hover {
     transform: scale(1.08);
 }
@@ -242,9 +238,6 @@ nav button {
     opacity: 0.9;
 }
 
-
-
-
 .faq h2 {
     text-align: center;
     font-size: 48px;
@@ -260,8 +253,6 @@ nav button {
     background-color: #414141;
     color: white;
 }
-
-
 
 .faqbox {
     transition: all 1s ease-out;
@@ -296,7 +287,6 @@ nav button {
     border-radius: 4px;
 }
 
-
 footer {
     color: white;
     max-width: 60vw;
@@ -308,14 +298,11 @@ footer .questions {
     padding: 34px 0;
 }
 
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
-
-
 
 @media screen and (max-width: 1300px) {
 
@@ -357,7 +344,6 @@ footer .questions {
     .footer-item{
         align-items: center;
     }
- 
 
 }
 @media (max-width: 1000px) {
@@ -372,8 +358,6 @@ footer .questions {
     }
 }
 
-
-
 @media screen and (max-width: 1300px) {
 
     .footer {
@@ -382,7 +366,6 @@ footer .questions {
         gap: 25px;
     }
 }
-
 
 .footer a {
     font-size: 14px;
