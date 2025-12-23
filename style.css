@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-    max-width: 60vw;
+    max-width: 90vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
